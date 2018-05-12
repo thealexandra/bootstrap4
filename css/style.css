@@ -1,0 +1,678 @@
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.eot');
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff'),
+         url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'latoitalic';
+    src: url('../fonts/lato-italic-webfont.eot');
+    src: url('../fonts/lato-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-italic-webfont.woff2') format('woff2'),
+         url('../fonts/lato-italic-webfont.woff') format('woff'),
+         url('../fonts/lato-italic-webfont.ttf') format('truetype'),
+         url('../fonts/lato-italic-webfont.svg#latoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-size: 16px;
+    font-family: 'latoregular', arial, tahoma, verdana, sans-serif;
+}
+a{
+    color: #828282;
+    text-decoration: none;
+}
+a:hover{
+    color: #000;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.top-banner{
+    min-height: 900px;
+    background: url('../images/banner.jpg') 50%;
+    background-size: cover;
+}
+.header{
+    color: #fff;
+    background: rgba(100,100,100,0.25);
+    position: relative;
+}
+.mobile-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-link{
+    color:  #fff;
+    height: 100%;
+    font-family: 'latoregular', sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    transition: 0.2s;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .nav-link.active{
+    border-bottom: 3px solid rgba(255,255,255,0.7);
+}
+.banner-content{
+    padding: 250px 80px;
+}
+.banner-content h3{
+    font-size: 3rem;
+    font-family: 'montserratbold', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+.banner-content p{
+    font-size: 1.125rem;
+    font-family: 'latoregular', sans-serif;
+    color: #fff;
+}
+.banner-slogan{
+    font-size: 3.375rem;
+    font-family: 'montserratbold', sans-serif;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    padding-right: 3.5rem;
+    line-height: 1;
+}
+.banner-slogan span{
+    background: #fff;
+    padding: 3rem 2.25rem 3rem 1.875rem;
+    color: #f1ad1d;
+    text-transform: uppercase;
+}
+.my-logo{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'montserratbold', sans-serif;
+    font-size: 1.7rem;
+}
+.my-logo:hover{
+    color: #fff;
+}
+.dotted-bg{
+    background: url("../images/dot.png") repeat -20px -7px;
+    padding: 6.875rem 0 11.25rem;
+}
+.title22{
+    font-family: 'montserratbold', sans-serif;
+    font-size: 1.375rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+.title17{
+    font-size: 1.06rem;
+    font-family: 'latoregular',sans-serif;
+    color: #4d4943;
+}
+.divider{
+    position: relative;
+    margin-bottom: 7rem;
+}
+.divider:after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f1ad1d;
+    position: absolute;
+    top: calc(3.5rem - 1px);
+    left: calc(50% - 30px);
+}
+.consulting{
+    margin-top: 10.625rem;
+}
+.container-cards .row{
+    margin-right: 0;
+}
+.cards{
+    height: 9.5rem;
+    overflow: hidden;
+    position: relative;
+}
+.cards img{
+    max-width: none;
+    height: 100%;
+    width: auto;
+}
+.consulting-info{
+    line-height: 1;
+}
+.title18{
+    font-family: 'montserratbold', sans-serif;
+    font-size: 1.125rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.yellow-text{
+    color: #f1ad1d;
+}
+.consulting-info p{
+    font-family: 'latolight',sans-serif;
+    font-size: 0.875rem;
+    color: #505050;
+    line-height: 1.375rem;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+.my-button{
+    border: none;
+    border-radius: 0;
+    background: #f1ad1d;
+    color: #fff;
+    width: 11rem;
+    height: 3.125rem;
+    font-family: 'latobold', sans-serif;
+    font-size: 14px; 
+    cursor: pointer;
+}
+.captions {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    width: 7.375rem;
+    height: 2.625rem;
+    padding-left: 0.875rem;
+    background: #333;
+    color: #fff;
+    font-family: 'latoregular', sans-serif;
+    font-size: 0.875rem;
+    line-height: 3;
+}
+.full-image .title22{
+    color: #fff;
+    margin-bottom: 7.75rem;
+}
+.full-image{
+    padding: 9.375rem 0;
+    height: 23.75rem;
+    background-image: url(../images/speed.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.full-image .divider:after ,
+.second-full-image .divider:after{
+    top: 5.25rem;
+}
+.team{
+    margin-bottom: 13rem;
+}
+.team-member{
+    padding: 0;
+    height: 11.125rem;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+.team-member img , 
+.portfolio img ,
+.photo-card img {
+    max-width: none;
+    height: 100%;
+    width: auto;
+}
+.team-member .captions{
+    left: 1rem;
+    width: 8.375rem;
+}
+.title18-1{
+    font-family: 'montserratbold', sans-serif;
+    font-size: 1.125rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.card-secrets .images {
+    height: 6.5rem;
+    line-height: 6.5rem;
+    text-align: center;
+}
+.card-secrets img{
+    vertical-align: middle;
+}
+p{
+    font-family: 'latolight', sans-serif;
+    font-size: 0.875rem;
+    color: #505050;
+}
+.second-divider{
+    position: relative;
+    height: 5rem;
+    margin-bottom: 3.625rem;
+}
+.second-divider:after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #f1ad1d;
+    position: absolute;
+    top: calc(6rem - 1px);
+    left: calc(50% - 30px);
+}
+.titleregular-18{
+    font-family: 'latoregular', sans-serif;
+    font-size: 1.125rem;
+    color: #505050;
+    margin-bottom: 1.125rem;
+}
+.types {
+    line-height: 1.25rem;
+    margin-bottom: 0;
+    padding-bottom: 1.875rem;
+    border-bottom: 3px solid #333;
+}
+.second-full-image{
+    padding: 9.375rem 0;
+    height: 29.625rem;
+    background-image: url(../images/fullHD.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.second-full-image .title22 ,
+.full-image-3 .title22{
+    color: #fff;
+}
+.tag-button{
+    border-radius: 0;
+    border: 1px solid #333;
+    color: #333;
+    padding: 0.9375rem 2.1875rem;
+    margin: 0 0.5625rem;
+}
+.tag-button:hover{
+    color: #f1ad1d;
+}
+.tag-button:not(:disabled):not(.disabled).active{
+    color: #f1ad1d;
+}
+.portfolio{
+    margin-top: 2.875rem;
+    margin-bottom: 9.375rem;
+}
+.portfolio-info ,
+.portfolio-card{
+    height: 17rem;
+    overflow: hidden;
+}
+.portfolio-card{
+    margin-bottom: 1rem;
+}
+.portfolio-info{
+    background: #fff;
+    border: 1px solid #333;
+    padding-top: 2.75rem;
+    padding-bottom: 2rem;
+}
+.portfolio-info .titleregular-18{
+    font-family: 'latolight', sans-serif;
+}
+.portfolio-info p{
+    color: #5b5b5b;
+    line-height: 1rem;
+    margin-bottom: 1.625rem;
+}
+.portfolio-info .my-button{
+    width: auto;
+    height: auto;
+    padding: 0.875rem 2.25rem;
+}
+.portfolio .no-padding{
+    padding-right: 0;
+}
+.portfolio .second-divider{
+    height: auto;
+    margin-bottom: 3rem;
+}
+.portfolio .second-divider:after{
+    top: calc(2.75rem - 1px);
+}
+.brands{
+    margin-bottom: 9.375rem;
+}
+.comment{
+    padding-top: 4.125rem;
+    padding-bottom: 1.875rem;
+    position: relative;
+    padding-right: 0;
+    border-bottom: 4px solid #111;
+    margin-bottom: 1rem;
+}
+.comment:before{
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background: url(../images/quotes.png) no-repeat;
+    top: 0%;
+}
+.comment:after{
+    position: absolute;
+    content: ' ';
+    background: #f1ad1d;
+    width: 80%;
+    height: 4px;
+    top: 15%;
+    right: 0%
+}
+.black{
+    font-family: 'latoregular', sans-serif;
+    color: #313131;
+    display: block;
+}
+.photo-card{
+    width: 56px;
+    height: 44px;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+.full-image-3{
+    position: relative;
+    padding: 8.25rem 0;
+    height: 30.375rem;
+    background: url(../images/fullHD1.jpg) 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.full-image-3 .titleregular-18{
+    color: #fff;
+}
+.white-divider{
+    width: 17.5rem;
+    height: 4px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.card-columns .blog-cards {
+    display: inline-block;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #333;
+    border-radius: 0;
+    margin-bottom: 1.875rem;
+}
+.blog-cards .title18-1{
+    margin-left: 0.625rem;
+    background: none;
+    color: #000;
+}
+.blog-cards p{
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+.title12{
+    font-family: 'latolight', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #828282;
+    padding: 1rem 0;
+}
+.buy-theme{
+    background: url(../images/fullHD-1.jpg) 50%;
+    padding: 5.875rem 0;
+}
+.buy-theme .tag-button{
+    color: #fff;
+    border-color: #fff;
+    text-transform: uppercase;
+    padding: 1.25rem 3.375rem;
+    font-family: 'latobold', sans-serif;
+    font-size: 0.875rem;
+}
+.buy-theme .tag-button:hover{
+    background: #fff;
+    color: #000;
+
+}
+.email{
+    margin-bottom: 10.75rem;
+}
+.email-form{
+    font-family: 'latoitalic', sans-serif;
+    font-size: 1.125rem;
+    color: #747474;
+    height: 4rem;
+    border-radius: 0;
+    border: 1px solid #c7c7c7;
+    min-width: 13.125rem;
+    margin-bottom: 1.25rem;
+}
+.form p ,
+.contact-us p{
+    margin: 1.25rem 0;
+}
+
+form .email-form{
+    color: #505050;
+    height: 2.75rem;
+    font-size: 0.875rem;
+}
+.form .my-button{
+    width: auto;
+    font-family: 'latobold', sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    padding: 1rem 2.375rem;
+    margin-right: 1.5rem;
+}
+.form textarea{
+    height: 11rem;
+    margin-bottom: 1.25rem;
+    font-family: 'latoitalic', sans-serif;
+    font-size: 0.875rem;
+    color: #505050;
+    border-radius: 0;
+}
+.email .my-button{
+    min-width: 6.875rem;
+    height: 4rem;
+    font-size: 1.125rem;
+}
+.contact-item{
+    margin-bottom: 0.5625rem;
+}
+.contact-item p{
+    padding-left: 0.875rem;
+    margin: 0;
+}
+.contact-us .items{
+    margin-bottom: 1.875rem;
+}
+.links{
+    margin-top: 1.875rem;
+}
+.link{
+    margin-right: 0.75rem;
+}
+.map-location{
+    height: 4rem;
+    background: #333;
+    color: #fff;
+    margin-top: 4.375rem;
+    margin-bottom: 2rem;
+}
+.footer{
+    padding-bottom: 2.5rem;
+}
+
+@media (max-width: 1024px)  {
+    .banner-content h3{
+        font-size: 2rem;
+    }
+    .banner-slogan, .banner-slogan span{
+        font-size: 2.375rem;
+    }
+    .banner-slogan span {
+        padding: 2rem 1.25rem 2rem 0.875rem;
+    }
+    .banner-slogan {
+        padding-right: 2.5rem;
+    }
+    .top-banner{
+        min-height: 400px;
+    }
+    .banner-content{
+        padding: 90px 40px;
+    }
+}
+@media (max-width: 991px) {
+    .divider:after{
+        top: 150%;
+    }
+    .comment:after{
+        width: 65%;
+    }
+    .tag-button {
+    margin: 0 0.4rem 0.875rem;
+    padding: 0.5rem 2rem;
+    }
+    .card-columns{
+        column-count: 2;
+    }
+}
+@media (max-width: 767px) {
+    .cards{
+        margin-bottom: 1.5rem;
+    }
+    .comments{
+        margin-bottom: 4rem;
+    }
+    .comment:after{
+        width: 85%;
+    }
+    .card-columns{
+        column-count: 1;
+    }
+}
+@media (max-width: 680px) {
+    .banner-content h3{
+        font-size: 1.3rem;
+    }
+    .banner-slogan, .banner-slogan span{
+        font-size: 1.5rem;
+    }
+    .banner-slogan span {
+        padding: 1.6rem 1.65rem 1.6rem 1.275rem;
+    }
+    .banner-slogan {
+        padding-right: 2.1rem;
+    }
+    .top-banner{
+        min-height: 400px;
+    }
+    .banner-content{
+        padding: 90px 40px;
+    }
+    .dotted-bg {
+        padding: 6.875rem 0 8.25rem;
+    }
+    .full-image ,
+    .second-full-image ,
+    .full-image-3{
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+@media (max-width: 575px) {
+    .header .nav {
+        background: url('../images/menu.svg') no-repeat 0 0 / 100%;
+        width: 56px;
+        height: 56px;
+        cursor: pointer;
+    }
+    .header .container{
+        align-items: center;
+    }
+    .mobile-navigation {
+        background: #000;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: right;
+        border-top: 2px solid #f1ad1d;
+        display: none;
+    }
+    .header{
+        background: #000;
+    }
+    .cards img,
+    .portfolio img{
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+    .portfolio-info, .portfolio-card {
+        height: auto;
+    }
+    .portfolio .no-padding {
+    padding-right: 15px; 
+    }
+}
+@media (max-width: 495px) {
+    .comment:after {
+        width: 80%;
+    }
+    .banner-content{
+        padding: 90px 15px;
+    }
+    .banner-slogan, .banner-slogan span{
+        font-size: 1.2rem;
+    }
+    .banner-slogan {
+        padding-right: 1rem;
+    }
+}
